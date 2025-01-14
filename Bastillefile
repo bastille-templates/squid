@@ -1,0 +1,7 @@
+# install required packages
+PKG squid
+
+SERVICE squid enable
+SERVICE squid start
+
+RDR tcp 3128 3128
