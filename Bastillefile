@@ -8,7 +8,10 @@ RESTART
 # install required packages
 PKG squid
 
+CMD sed -e "s,%%SERVER_IP%%,${JAIL_IP},g" -i "" /etc/hosts
+
 SERVICE squid enable
 SERVICE squid start
 
 RDR tcp 3128 3128
+RDR udp 53 53
