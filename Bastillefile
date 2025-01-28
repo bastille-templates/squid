@@ -6,7 +6,7 @@ CONFIG set allow.raw_sockets=1;
 RESTART
 
 # install required packages
-PKG squid squidview
+PKG squid ca_root_nss
 
 CMD sed -e "s,%%SERVER_IP%%,${JAIL_IP},g" -i "" /etc/hosts
 CMD sed -e "s,%%HOSTNAME%%,squid,g" -i "" /usr/local/etc/squid/squid.conf
