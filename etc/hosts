@@ -1,3 +1,1 @@
-::1             localhost localhost.my.domain
-127.0.0.1       localhost localhost.my.domain
-%%SERVER_IP%%       localhost localhost.my.domain
+%%SERVER_IP%%   %%HOSTNAME%%.local
