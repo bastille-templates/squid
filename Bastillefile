@@ -6,6 +6,7 @@ CONFIG set allow.raw_sockets=1;
 RESTART
 
 # install required packages
+INCLUDE https://github.com/bastille-templates/local-unbound
 PKG squid ca_root_nss
 
 CP etc /
